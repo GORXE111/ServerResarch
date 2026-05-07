@@ -25,6 +25,7 @@
 - Reward / 经济系统：物品 ID 命名空间 + 统一 Inventory.addItem 入口 + 100+ ActionReason 审计 + Mail 异步通道
 - Combat / Ability 系统：混合权威模型的代码级分界 + AbilityManager（4 线程同构）+ 服务器算摔伤 + 反作弊 hooks
 - Codex / 图鉴系统：寄生型设计反例（vs Quest 独立子系统）· 8 个 Set/Map + 6 个分散触发点
+- Multiplayer / Coop 系统：World/Scene/Player 三级容器 + 邀请协议 + Team 同步 + 视野广播 + 解散逻辑
 
 ## 快速开始
 
@@ -63,7 +64,8 @@ ServerResarch/
 │   ├── 14-scene-script-and-lua-engine.md    Scene Script 系统 · 任务系统的镜像兄弟
 │   ├── 15-reward-and-economy-system.md      Reward / 经济系统 · 统一入口 + 100+ 审计
 │   ├── 16-combat-and-ability-system.md      Combat / Ability 系统 · 混合权威的具体落地
-│   └── 17-codex-archive-system.md           Codex 系统 · 寄生型图鉴的优雅实现
+│   ├── 17-codex-archive-system.md           Codex 系统 · 寄生型图鉴的优雅实现
+│   └── 18-multiplayer-coop-system.md        Multiplayer / Coop 系统 · 联机房间与跨账号同步
 ├── scripts/
 │   ├── analyze_quests.py               全量任务语料分析脚本
 │   ├── deobfuscate_keys.py             混淆 key → 真实字段名 反混淆器
