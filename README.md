@@ -13,6 +13,7 @@
 - 每日委托如何寄生在主任务引擎上
 - 每周任务为何"实际不存在"
 - 真实主线任务 `MainQuest 1001` 的完整时序拆解
+- 全量 2360 个任务（20,893 个 SubQuest）的使用分布统计与设计修正
 
 ## 快速开始
 
@@ -39,7 +40,10 @@ ServerResarch/
 │   ├── 02-quest-system-design.md       任务系统数据结构与调度设计
 │   ├── 03-runtime-flow.md              接取/执行/完成的运行时流程
 │   ├── 04-daily-weekly-tasks.md        每日/每周任务实现机制
-│   └── 05-real-quest-walkthrough-1001.md  真实主线任务全流程拆解
+│   ├── 05-real-quest-walkthrough-1001.md  真实主线任务全流程拆解
+│   └── 06-corpus-analysis.md           全量 2360 个任务的统计分析与设计修正
+├── scripts/
+│   └── analyze_quests.py               全量任务语料分析脚本
 ├── Grasscutter-Quests/             [submodule] 私服源码（用于代码考古）
 └── GenshinData/                    [.gitignore] 由 setup 脚本拉取的游戏数据
 ```
