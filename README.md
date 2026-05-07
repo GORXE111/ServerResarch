@@ -15,6 +15,7 @@
 - 真实主线任务 `MainQuest 1001` (小型测试) 的完整时序拆解
 - 全量 2360 个任务（20,893 个 SubQuest）的使用分布统计与设计修正
 - 真实剧情任务 `MainQuest 3022` (须弥章 Caribert) 的电影化叙事架构
+- Talk 对话系统的"客户端权威"设计 + Lua 脚本与任务系统的双向桥接
 
 ## 快速开始
 
@@ -43,7 +44,8 @@ ServerResarch/
 │   ├── 04-daily-weekly-tasks.md        每日/每周任务实现机制
 │   ├── 05-real-quest-walkthrough-1001.md  小型测试任务 1001 全流程拆解
 │   ├── 06-corpus-analysis.md           全量 2360 个任务的统计分析与设计修正
-│   └── 07-real-quest-3022-caribert.md  须弥章魔神任务 3022 (Caribert) 深度拆解
+│   ├── 07-real-quest-3022-caribert.md  须弥章魔神任务 3022 (Caribert) 深度拆解
+│   └── 08-talk-and-lua-bridge.md       Talk 对话系统 + Lua 脚本桥 双向架构
 ├── scripts/
 │   └── analyze_quests.py               全量任务语料分析脚本
 ├── Grasscutter-Quests/             [submodule] 私服源码（用于代码考古）
