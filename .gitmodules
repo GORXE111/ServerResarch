@@ -1,0 +1,4 @@
+[submodule "Grasscutter-Quests"]
+	path = Grasscutter-Quests
+	url = https://github.com/Anime-Game-Servers/Grasscutter-Quests.git
+	shallow = true

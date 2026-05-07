@@ -1,0 +1,22 @@
+# 大数据集 - 用 setup 脚本拉取，不进版本控制
+GenshinData/
+
+# IDE / 编辑器
+.idea/
+.vscode/
+*.iml
+*.suo
+*.user
+
+# Claude Code 本地配置
+.claude/
+
+# 系统
+**/.DS_Store
+**/Thumbs.db
+**/desktop.ini
+
+# 临时
+*.log
+*.tmp
+*.bak
