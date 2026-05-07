@@ -19,6 +19,7 @@
 - 真实对话分支：夜兰 LQ 11019 的 3 选项 + 汇合 talk 完整协议追踪
 - 反混淆映射表：把 2360 个文件的版本特定混淆 key 全部翻译成可读字段名（89 个 key 已映射，覆盖 99.6%）
 - TextMap 翻译：把 textHash 用 TextMapCHS 还原成中文标题和描述（21,938 个 hash 已翻译，含真实任务名核对）
+- NPC + Dialog 翻译：5079 个 NPC ID 翻译成名字 + 203,908 条对话节点的实际台词浮现（performId → text 99.5% 命中率）
 
 ## 快速开始
 
@@ -51,7 +52,8 @@ ServerResarch/
 │   ├── 08-talk-and-lua-bridge.md       Talk 对话系统 + Lua 脚本桥 双向架构
 │   ├── 09-talk-exec-branching-example.md  夜兰 LQ 11019 对话分支选项实例
 │   ├── 10-deobfuscation-table.md       反混淆映射表 · 89 个 key 全清晰化
-│   └── 11-textmap-translation.md       TextMap 翻译 · textHash → 中文文本 + 重大命名修正
+│   ├── 11-textmap-translation.md       TextMap 翻译 · textHash → 中文文本 + 重大命名修正
+│   └── 12-npc-dialog-translation.md    NPC 名 + Dialog 表打通 · 真实台词浮现
 ├── scripts/
 │   ├── analyze_quests.py               全量任务语料分析脚本
 │   ├── deobfuscate_keys.py             混淆 key → 真实字段名 反混淆器
