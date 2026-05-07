@@ -17,6 +17,7 @@
 - 真实剧情任务 `MainQuest 3022` (须弥章 Caribert) 的电影化叙事架构
 - Talk 对话系统的"客户端权威"设计 + Lua 脚本与任务系统的双向桥接
 - 真实对话分支：夜兰 LQ 11019 的 3 选项 + 汇合 talk 完整协议追踪
+- 反混淆映射表：把 2360 个文件的版本特定混淆 key 全部翻译成可读字段名（89 个 key 已映射，覆盖 99.6%）
 
 ## 快速开始
 
@@ -47,9 +48,11 @@ ServerResarch/
 │   ├── 06-corpus-analysis.md           全量 2360 个任务的统计分析与设计修正
 │   ├── 07-real-quest-3022-caribert.md  须弥章魔神任务 3022 (Caribert) 深度拆解
 │   ├── 08-talk-and-lua-bridge.md       Talk 对话系统 + Lua 脚本桥 双向架构
-│   └── 09-talk-exec-branching-example.md  夜兰 LQ 11019 对话分支选项实例
+│   ├── 09-talk-exec-branching-example.md  夜兰 LQ 11019 对话分支选项实例
+│   └── 10-deobfuscation-table.md       反混淆映射表 · 89 个 key 全清晰化
 ├── scripts/
-│   └── analyze_quests.py               全量任务语料分析脚本
+│   ├── analyze_quests.py               全量任务语料分析脚本
+│   └── deobfuscate_keys.py             混淆 key → 真实字段名 反混淆器
 ├── Grasscutter-Quests/             [submodule] 私服源码（用于代码考古）
 └── GenshinData/                    [.gitignore] 由 setup 脚本拉取的游戏数据
 ```
