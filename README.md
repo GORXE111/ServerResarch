@@ -20,6 +20,7 @@
 - 反混淆映射表：把 2360 个文件的版本特定混淆 key 全部翻译成可读字段名（89 个 key 已映射，覆盖 99.6%）
 - TextMap 翻译：把 textHash 用 TextMapCHS 还原成中文标题和描述（21,938 个 hash 已翻译，含真实任务名核对）
 - NPC + Dialog 翻译：5079 个 NPC ID 翻译成名字 + 203,908 条对话节点的实际台词浮现（performId → text 99.5% 命中率）
+- 项目终章工具：Mermaid 流程图自动生成 + 完整剧情脚本重构（"识藏日"潜入对白、夜兰任务谈价场景从 JSON 还原）
 
 ## 快速开始
 
@@ -53,11 +54,14 @@ ServerResarch/
 │   ├── 09-talk-exec-branching-example.md  夜兰 LQ 11019 对话分支选项实例
 │   ├── 10-deobfuscation-table.md       反混淆映射表 · 89 个 key 全清晰化
 │   ├── 11-textmap-translation.md       TextMap 翻译 · textHash → 中文文本 + 重大命名修正
-│   └── 12-npc-dialog-translation.md    NPC 名 + Dialog 表打通 · 真实台词浮现
+│   ├── 12-npc-dialog-translation.md    NPC 名 + Dialog 表打通 · 真实台词浮现
+│   └── 13-visualization-and-dialog-tree.md  Mermaid 流程图 + 剧情脚本重构（项目终章）
 ├── scripts/
 │   ├── analyze_quests.py               全量任务语料分析脚本
 │   ├── deobfuscate_keys.py             混淆 key → 真实字段名 反混淆器
-│   └── translate_text.py               textHash → 中文文本 翻译器
+│   ├── translate_text.py               textHash → 中文文本 + NPC 名 + Dialog 翻译器
+│   ├── visualize_quest.py              SubQuest 状态转移 → Mermaid 流程图
+│   └── dialog_tree.py                  对话链重构 + 剧情脚本生成
 ├── Grasscutter-Quests/             [submodule] 私服源码（用于代码考古）
 └── GenshinData/                    [.gitignore] 由 setup 脚本拉取的游戏数据
 ```

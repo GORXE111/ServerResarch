@@ -1,6 +1,9 @@
 # 大数据集 - 用 setup 脚本拉取，不进版本控制
 GenshinData/
 
+# 工具生成产物（每次本地跑都能重生）
+output/
+
 # IDE / 编辑器
 .idea/
 .vscode/
