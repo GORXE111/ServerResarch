@@ -1,4 +1,7 @@
-# 07 · 真实剧情任务深度拆解：MainQuest 3022 "Caribert"（须弥章 第六幕）
+# 07 · 真实剧情任务深度拆解：MainQuest 3022 "识藏日"（须弥章第三章 第五幕）
+
+> **🔧 命名修正（基于 notes/11 的 TextMap 翻译结果）**：本文最初误称此任务为 "Caribert"。实际通过 TextMap 翻译验证，MainQuest 3022 真名是 **"识藏日"**（英文版："Akasha Pulses, the Kalpa Flame Rises"，须弥章第三章第五幕），描述："终于到了「识藏日」这天，一切计划安排与一切的准备，都只为了一个目标——「拯救神明」。" 这是从教令院夺回小吉祥草王（纳希妲）的高潮章节。文章其余分析（save-point 模式、failExec 设计等）依然有效。
+
 
 第二个真实任务案例。比 1001 大 16 倍，展示原神剧情任务的**电影化叙事架构**。
 
@@ -155,7 +158,7 @@ FJOHFMAOAEA  →  isMpBlock         ← 多人模式禁用
 这是一个**全局叙事状态变量**，在 49 个 SubQuests 间从 0→1→...→6 演进。它充当**"剧情已推进到第几幕"**的全局标记。其他系统（场景脚本、Talk 可见性、其他任务）可以订阅这个值。
 
 **这就是分支剧情和"剧情后世界变化"的实现机制**：
-- "玩家做完 Caribert 后，须弥某 NPC 才有新对话" → 该 NPC 的 Talk 条件订阅 `QUEST_COND_QUEST_GLOBAL_VAR_EQUAL [3022, 6]`
+- "玩家做完 识藏日 后，须弥某 NPC 才有新对话" → 该 NPC 的 Talk 条件订阅 `QUEST_COND_QUEST_GLOBAL_VAR_EQUAL [3022, 6]`
 - "完成 3022 后特定地点解锁" → 场景 Lua 检查同一变量
 
 ---
@@ -214,7 +217,7 @@ order   subId
 }
 ```
 
-3022 中所有 talkRole 都是 NPC 1056（Dainsleif）——印证这是 Caribert 章，Dainsleif 是该剧情的核心 NPC。
+3022 中所有 talkRole 都是 NPC 1056（Dainsleif）——印证这是 识藏日 章，Dainsleif 是该剧情的核心 NPC。
 
 talkId 30221017 → nextTalks [30221018] → ... 形成**对话链表**。Talk 系统可以表达：
 - 单线对话（链表）
