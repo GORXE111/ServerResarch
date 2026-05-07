@@ -22,6 +22,7 @@
 - NPC + Dialog 翻译：5079 个 NPC ID 翻译成名字 + 203,908 条对话节点的实际台词浮现（performId → text 99.5% 命中率）
 - 项目终章工具：Mermaid 流程图自动生成 + 完整剧情脚本重构（"识藏日"潜入对白、夜兰任务谈价场景从 JSON 还原）
 - Scene Script 系统：30+ 种 EVENT 类型 + 100+ Lua API + Group/Suite 动态切换机制（任务系统的姐妹系统）
+- Reward / 经济系统：物品 ID 命名空间 + 统一 Inventory.addItem 入口 + 100+ ActionReason 审计 + Mail 异步通道
 
 ## 快速开始
 
@@ -57,7 +58,8 @@ ServerResarch/
 │   ├── 11-textmap-translation.md       TextMap 翻译 · textHash → 中文文本 + 重大命名修正
 │   ├── 12-npc-dialog-translation.md    NPC 名 + Dialog 表打通 · 真实台词浮现
 │   ├── 13-visualization-and-dialog-tree.md  Mermaid 流程图 + 剧情脚本重构
-│   └── 14-scene-script-and-lua-engine.md    Scene Script 系统 · 任务系统的镜像兄弟
+│   ├── 14-scene-script-and-lua-engine.md    Scene Script 系统 · 任务系统的镜像兄弟
+│   └── 15-reward-and-economy-system.md      Reward / 经济系统 · 统一入口 + 100+ 审计
 ├── scripts/
 │   ├── analyze_quests.py               全量任务语料分析脚本
 │   ├── deobfuscate_keys.py             混淆 key → 真实字段名 反混淆器
