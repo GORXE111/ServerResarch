@@ -16,6 +16,7 @@
 - 全量 2360 个任务（20,893 个 SubQuest）的使用分布统计与设计修正
 - 真实剧情任务 `MainQuest 3022` (须弥章 Caribert) 的电影化叙事架构
 - Talk 对话系统的"客户端权威"设计 + Lua 脚本与任务系统的双向桥接
+- 真实对话分支：夜兰 LQ 11019 的 3 选项 + 汇合 talk 完整协议追踪
 
 ## 快速开始
 
@@ -45,7 +46,8 @@ ServerResarch/
 │   ├── 05-real-quest-walkthrough-1001.md  小型测试任务 1001 全流程拆解
 │   ├── 06-corpus-analysis.md           全量 2360 个任务的统计分析与设计修正
 │   ├── 07-real-quest-3022-caribert.md  须弥章魔神任务 3022 (Caribert) 深度拆解
-│   └── 08-talk-and-lua-bridge.md       Talk 对话系统 + Lua 脚本桥 双向架构
+│   ├── 08-talk-and-lua-bridge.md       Talk 对话系统 + Lua 脚本桥 双向架构
+│   └── 09-talk-exec-branching-example.md  夜兰 LQ 11019 对话分支选项实例
 ├── scripts/
 │   └── analyze_quests.py               全量任务语料分析脚本
 ├── Grasscutter-Quests/             [submodule] 私服源码（用于代码考古）
