@@ -31,6 +31,7 @@
 - Gacha / 抽卡系统：商业核心的伪随机数学 · 4 层保底叠加（整体/UP/定轨/池平衡）· 线性插值软保底 · 完全服务器权威
 - BattlePass / 战令系统：长期成长 · 三段状态机 · 双轨奖励 · 周积分上限 · 跨系统共享 WatcherTriggerType
 - HomeWorld / 尘歌壶系统：UGC 范式 · 玩家自定义场景 · 客户端 3D 编辑 + 服务器存储 · 异步社交（离线访问）
+- Avatar 升级系统：7 层属性叠加（基础+突破+圣遗物主/副/套装+武器+精炼）· 升级/突破双层节奏 · 命座系统
 
 ## 快速开始
 
@@ -75,7 +76,8 @@ ServerResarch/
 │   ├── 20-activity-system.md                Activity / 限时活动系统 · 插件式架构与"临时世界"
 │   ├── 21-gacha-wish-system.md              Gacha / 抽卡系统 · 商业核心的伪随机数学
 │   ├── 22-battlepass-system.md              BattlePass / 战令系统 · 长期成长的统计型框架
-│   └── 23-homeworld-system.md               HomeWorld / 尘歌壶 · UGC 范式与玩家自定义场景
+│   ├── 23-homeworld-system.md               HomeWorld / 尘歌壶 · UGC 范式与玩家自定义场景
+│   └── 24-avatar-leveling-system.md         Avatar 升级 / Talent / Constellation · 7 层属性叠加
 ├── scripts/
 │   ├── analyze_quests.py               全量任务语料分析脚本
 │   ├── deobfuscate_keys.py             混淆 key → 真实字段名 反混淆器
