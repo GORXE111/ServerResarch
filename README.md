@@ -38,6 +38,7 @@
 - 任务奖励深度专题：4 条数据路径 + rewardId 命名规律 + 任务类型 vs 奖励差异 + 原石经济的章节节奏
 - **网络协议层深度剖析**：KCP/UDP + 自定义二进制 + XOR 双密钥 + RSA 握手 + 反射路由 600+ packet（最底层支撑笔记）
 - **数据库持久化层深度剖析**：14 个 MongoDB collection · Embedded vs Top-level 取舍 · save/load 链 · 无事务的脆弱性
+- **Dispatch HTTP 服务器深度剖析**：客户端连游戏前的入口 · 9 个 Router · 4 步 HTTP 登录链路 · 三层 token 设计
 
 ## 快速开始
 
@@ -89,7 +90,8 @@ ServerResarch/
 │   ├── 27-architectural-patterns-catalog.md 架构模式总目录 · 26 篇笔记的横向提炼（capstone）
 │   ├── 28-quest-reward-deep-dive.md         任务奖励深度专题 · 配表 → 物品 + 商业经济视角
 │   ├── 29-network-protocol-deep-dive.md     网络协议层深度剖析 · KCP/UDP + XOR + RSA + 反射路由
-│   └── 30-database-persistence-layer.md     数据库持久化层 · MongoDB 14 collection + 聚合设计
+│   ├── 30-database-persistence-layer.md     数据库持久化层 · MongoDB 14 collection + 聚合设计
+│   └── 31-dispatch-http-server.md           Dispatch HTTP 服务器 · 区服发现 + 三层 token + URL 模仿
 ├── scripts/
 │   └── analyze_quest_rewards.py            任务奖励统计分析（含原石密度 + 顶级奖励排行）
 ├── scripts/
