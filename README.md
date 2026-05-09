@@ -36,6 +36,7 @@
 - Friend / Social / Chat 系统：双向 Friendship 反范式存储 · Chat 兼命令入口 · 内存历史会话级
 - **架构模式总目录**：从 26 篇笔记中横向提炼 25 个可复用模式 + 10 条工程原则（capstone 笔记）
 - 任务奖励深度专题：4 条数据路径 + rewardId 命名规律 + 任务类型 vs 奖励差异 + 原石经济的章节节奏
+- **网络协议层深度剖析**：KCP/UDP + 自定义二进制 + XOR 双密钥 + RSA 握手 + 反射路由 600+ packet（最底层支撑笔记）
 
 ## 快速开始
 
@@ -85,7 +86,8 @@ ServerResarch/
 │   ├── 25-crafting-systems.md               制作系统大全 · Combine / Cook / Compound / Forge / Decompose
 │   ├── 26-friend-social-chat-system.md      Friend / Social / Chat · 社交基础设施
 │   ├── 27-architectural-patterns-catalog.md 架构模式总目录 · 26 篇笔记的横向提炼（capstone）
-│   └── 28-quest-reward-deep-dive.md         任务奖励深度专题 · 配表 → 物品 + 商业经济视角
+│   ├── 28-quest-reward-deep-dive.md         任务奖励深度专题 · 配表 → 物品 + 商业经济视角
+│   └── 29-network-protocol-deep-dive.md     网络协议层深度剖析 · KCP/UDP + XOR + RSA + 反射路由
 ├── scripts/
 │   └── analyze_quest_rewards.py            任务奖励统计分析（含原石密度 + 顶级奖励排行）
 ├── scripts/
