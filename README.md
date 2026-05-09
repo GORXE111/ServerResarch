@@ -33,6 +33,7 @@
 - HomeWorld / 尘歌壶系统：UGC 范式 · 玩家自定义场景 · 客户端 3D 编辑 + 服务器存储 · 异步社交（离线访问）
 - Avatar 升级系统：7 层属性叠加（基础+突破+圣遗物主/副/套装+武器+精炼）· 升级/突破双层节奏 · 命座系统
 - 制作系统大全：5 种"输入→输出"机制对比 · 同步合成 vs 异步队列 vs 概率烹饪 · ActionReason 细分审计
+- Friend / Social / Chat 系统：双向 Friendship 反范式存储 · Chat 兼命令入口 · 内存历史会话级
 
 ## 快速开始
 
@@ -79,7 +80,8 @@ ServerResarch/
 │   ├── 22-battlepass-system.md              BattlePass / 战令系统 · 长期成长的统计型框架
 │   ├── 23-homeworld-system.md               HomeWorld / 尘歌壶 · UGC 范式与玩家自定义场景
 │   ├── 24-avatar-leveling-system.md         Avatar 升级 / Talent / Constellation · 7 层属性叠加
-│   └── 25-crafting-systems.md               制作系统大全 · Combine / Cook / Compound / Forge / Decompose
+│   ├── 25-crafting-systems.md               制作系统大全 · Combine / Cook / Compound / Forge / Decompose
+│   └── 26-friend-social-chat-system.md      Friend / Social / Chat · 社交基础设施
 ├── scripts/
 │   ├── analyze_quests.py               全量任务语料分析脚本
 │   ├── deobfuscate_keys.py             混淆 key → 真实字段名 反混淆器
