@@ -43,6 +43,7 @@
 - **Gadget 系统全景剖析**：第三大实体 · 73 种 EntityType · Entity+Content 两层抽象 · 宝箱/采集/工作台/载具/平台/掉落物
 - **EntityAvatar 玩家实体剖析**：三大实体三部曲收官 · 双层模型 (Avatar/EntityAvatar) · 5 字段极简委托 · 4 队伍并行 · 5 能力源 · 共享 player.position
 - **Scene/World 三级容器架构**：宇宙骨架 · GameServer→World→Scene→Entity 四级金字塔 · tick 系统 · GridBlock 空间索引 · dieY 虚空线
+- **战斗状态与伤害计算深度专题**：130+ FightProperty · 三层叠加公式 · Avatar 9 层属性 · 摔伤 4 档服务器算 · 200ms 反作弊窗 · 权威边界全表
 
 ## 快速开始
 
@@ -99,7 +100,8 @@ ServerResarch/
 │   ├── 32-monster-system-full.md            怪物系统全景 · 数据/AI/战斗/死亡级联/联机权威
 │   ├── 33-gadget-system-full.md             Gadget 系统全景 · 73 类实体 · 11 种 Content · Chest/Worktop/Vehicle/Item
 │   ├── 34-entity-avatar-full.md             EntityAvatar 玩家实体 · 双层模型 · 5 能力源 · 三大实体对比
-│   └── 35-scene-world-container.md          Scene/World 三级容器 · 四级金字塔 · tick + GridBlock + dieY
+│   ├── 35-scene-world-container.md          Scene/World 三级容器 · 四级金字塔 · tick + GridBlock + dieY
+│   └── 36-combat-stats-damage-formula.md    战斗状态与伤害计算 · FightProperty 130+ · 9 层属性 · 摔伤公式
 ├── scripts/
 │   └── analyze_quest_rewards.py            任务奖励统计分析（含原石密度 + 顶级奖励排行）
 ├── scripts/
