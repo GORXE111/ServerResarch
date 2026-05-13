@@ -59,6 +59,7 @@
 - **Activity 限时活动运行时引擎**：grasscutter 最长尾子系统 · 141 ActivityType · 39 文件 · 5% 实现率 + Default 兜底
 - **Resin/Stamina 时间锁机制深度剖析**：第 50 篇里程碑 · 两套并行时间资源 · lazy + polling · 14 ConsumptionType · 3 层减耗叠加
 - **Tower/深境螺旋系统深度剖析**：endgame 核心 · 双层架构 · 12 楼×3 室×2 队 · 6 星门槛 · 月度循环 · 双奖励 · 复用 Dungeon 加壳
+- **GachaSystem 抽卡运行时引擎**：商业核心 · 6 BannerType · 4 套 pool · 4 类 pity · 命定值 · 双池平衡 · 热重载
 
 ## 快速开始
 
@@ -131,7 +132,8 @@ ServerResarch/
 │   ├── 48-dungeon-runtime-engine.md         Dungeon 副本运行时 · 5 系统交汇 · 72 文件 · 8×36×17×8 积木组合
 │   ├── 49-activity-runtime-engine.md        Activity 限时活动运行时 · 141 类型 · 39 文件 · 5% 实现率 + Default 兜底
 │   ├── 50-resin-stamina-time-locked.md      Resin/Stamina 时间锁 · 两套时间资源 · 14 ConsumptionType · 第 50 篇里程碑
-│   └── 51-tower-spiral-abyss.md             Tower/深境螺旋 · 双层架构 · 12 楼×3 室×2 队 · 月度循环 · 复用 Dungeon
+│   ├── 51-tower-spiral-abyss.md             Tower/深境螺旋 · 双层架构 · 12 楼×3 室×2 队 · 月度循环 · 复用 Dungeon
+│   └── 52-gacha-system-runtime.md           GachaSystem 抽卡运行时 · 商业核心 · 6 BannerType · 4 套 pool · 4 类 pity · 命定值
 ├── scripts/
 │   └── analyze_quest_rewards.py            任务奖励统计分析（含原石密度 + 顶级奖励排行）
 ├── scripts/
