@@ -54,6 +54,7 @@
 - **SceneScriptManager/Lua 引擎深度**：1075 行运行时核心 · 28 个 scriptlib_handlers · 200+ Lua API · ThreadLocal + 13 次 4 线程
 - **GameData/资源加载体系剖析**：160+ 静态 Map · 111 个 Excel · 30 步启动流水线 · 4 级 LoadPriority · 并行加载 · 数据驱动哲学
 - **GameServer 启动序列与全局调度**：main 11 步 · 14 GameSystem · Timer 主循环 · ShutdownHook · 服务器全生命周期
+- **Plugin/Event 系统深度剖析**：27 Event 类 · PluginManager 310 行 · Cancellable 双轨 · 7 反作弊钩子 · Bukkit 风格扩展骨架
 
 ## 快速开始
 
@@ -121,7 +122,8 @@ ServerResarch/
 │   ├── 43-quest-runtime-engine.md           Quest 引擎运行时 · 4 层对象 · 190+ 反射 handler · rewind 机制
 │   ├── 44-scene-script-manager-engine.md    SceneScriptManager Lua 引擎 · 28 handler · 200+ API · Region/Trigger 双缓冲
 │   ├── 45-gamedata-resource-loader.md       GameData 资源加载体系 · 160+ 静态 Map · 30 步流水线 · 数据驱动哲学
-│   └── 46-game-server-bootstrap-tick.md     GameServer 启动序列与调度 · main 11 步 · 14 GameSystem · Timer 主循环
+│   ├── 46-game-server-bootstrap-tick.md     GameServer 启动序列与调度 · main 11 步 · 14 GameSystem · Timer 主循环
+│   └── 47-plugin-event-system.md            Plugin/Event 系统 · 27 Event 类 · Cancellable 双轨 · Bukkit 风格
 ├── scripts/
 │   └── analyze_quest_rewards.py            任务奖励统计分析（含原石密度 + 顶级奖励排行）
 ├── scripts/
