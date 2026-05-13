@@ -55,6 +55,7 @@
 - **GameData/资源加载体系剖析**：160+ 静态 Map · 111 个 Excel · 30 步启动流水线 · 4 级 LoadPriority · 并行加载 · 数据驱动哲学
 - **GameServer 启动序列与全局调度**：main 11 步 · 14 GameSystem · Timer 主循环 · ShutdownHook · 服务器全生命周期
 - **Plugin/Event 系统深度剖析**：27 Event 类 · PluginManager 310 行 · Cancellable 双轨 · 7 反作弊钩子 · Bukkit 风格扩展骨架
+- **Dungeon 副本运行时深度剖析**：5 系统交汇点 · 72 文件 · 8 通关条件 × 36 副本类型 × 17 Handler × 8 Trigger · 4 倍奖励叠加
 
 ## 快速开始
 
@@ -123,7 +124,8 @@ ServerResarch/
 │   ├── 44-scene-script-manager-engine.md    SceneScriptManager Lua 引擎 · 28 handler · 200+ API · Region/Trigger 双缓冲
 │   ├── 45-gamedata-resource-loader.md       GameData 资源加载体系 · 160+ 静态 Map · 30 步流水线 · 数据驱动哲学
 │   ├── 46-game-server-bootstrap-tick.md     GameServer 启动序列与调度 · main 11 步 · 14 GameSystem · Timer 主循环
-│   └── 47-plugin-event-system.md            Plugin/Event 系统 · 27 Event 类 · Cancellable 双轨 · Bukkit 风格
+│   ├── 47-plugin-event-system.md            Plugin/Event 系统 · 27 Event 类 · Cancellable 双轨 · Bukkit 风格
+│   └── 48-dungeon-runtime-engine.md         Dungeon 副本运行时 · 5 系统交汇 · 72 文件 · 8×36×17×8 积木组合
 ├── scripts/
 │   └── analyze_quest_rewards.py            任务奖励统计分析（含原石密度 + 顶级奖励排行）
 ├── scripts/
