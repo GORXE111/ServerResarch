@@ -52,6 +52,7 @@
 - **表演系统与对话配置深度剖析**：极端客户端权威 · 服务器极简 200 行 · Cutscene 只下发 ID · 4 种 talk 模式 · 30+ ExecXxx 输出端
 - **Quest 引擎运行时深度剖析**：4 层对象 · QuestSystem/Manager/MainQuest/Quest · 190+ 注解反射 handler · 倒排索引 · rewind 机制
 - **SceneScriptManager/Lua 引擎深度**：1075 行运行时核心 · 28 个 scriptlib_handlers · 200+ Lua API · ThreadLocal + 13 次 4 线程
+- **GameData/资源加载体系剖析**：160+ 静态 Map · 111 个 Excel · 30 步启动流水线 · 4 级 LoadPriority · 并行加载 · 数据驱动哲学
 
 ## 快速开始
 
@@ -117,7 +118,8 @@ ServerResarch/
 │   ├── 41-event-types-unified-bus.md        事件类型 4 套并行总线 · 500+ 事件类型 · 跨系统协作神经网络
 │   ├── 42-performance-dialog-system.md      表演与对话系统 · 客户端权威极端样本 · Cutscene/Plot/Talk 演出
 │   ├── 43-quest-runtime-engine.md           Quest 引擎运行时 · 4 层对象 · 190+ 反射 handler · rewind 机制
-│   └── 44-scene-script-manager-engine.md    SceneScriptManager Lua 引擎 · 28 handler · 200+ API · Region/Trigger 双缓冲
+│   ├── 44-scene-script-manager-engine.md    SceneScriptManager Lua 引擎 · 28 handler · 200+ API · Region/Trigger 双缓冲
+│   └── 45-gamedata-resource-loader.md       GameData 资源加载体系 · 160+ 静态 Map · 30 步流水线 · 数据驱动哲学
 ├── scripts/
 │   └── analyze_quest_rewards.py            任务奖励统计分析（含原石密度 + 顶级奖励排行）
 ├── scripts/
