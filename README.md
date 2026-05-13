@@ -57,6 +57,7 @@
 - **Plugin/Event 系统深度剖析**：27 Event 类 · PluginManager 310 行 · Cancellable 双轨 · 7 反作弊钩子 · Bukkit 风格扩展骨架
 - **Dungeon 副本运行时深度剖析**：5 系统交汇点 · 72 文件 · 8 通关条件 × 36 副本类型 × 17 Handler × 8 Trigger · 4 倍奖励叠加
 - **Activity 限时活动运行时引擎**：grasscutter 最长尾子系统 · 141 ActivityType · 39 文件 · 5% 实现率 + Default 兜底
+- **Resin/Stamina 时间锁机制深度剖析**：第 50 篇里程碑 · 两套并行时间资源 · lazy + polling · 14 ConsumptionType · 3 层减耗叠加
 
 ## 快速开始
 
@@ -127,7 +128,8 @@ ServerResarch/
 │   ├── 46-game-server-bootstrap-tick.md     GameServer 启动序列与调度 · main 11 步 · 14 GameSystem · Timer 主循环
 │   ├── 47-plugin-event-system.md            Plugin/Event 系统 · 27 Event 类 · Cancellable 双轨 · Bukkit 风格
 │   ├── 48-dungeon-runtime-engine.md         Dungeon 副本运行时 · 5 系统交汇 · 72 文件 · 8×36×17×8 积木组合
-│   └── 49-activity-runtime-engine.md        Activity 限时活动运行时 · 141 类型 · 39 文件 · 5% 实现率 + Default 兜底
+│   ├── 49-activity-runtime-engine.md        Activity 限时活动运行时 · 141 类型 · 39 文件 · 5% 实现率 + Default 兜底
+│   └── 50-resin-stamina-time-locked.md      Resin/Stamina 时间锁 · 两套时间资源 · 14 ConsumptionType · 第 50 篇里程碑
 ├── scripts/
 │   └── analyze_quest_rewards.py            任务奖励统计分析（含原石密度 + 顶级奖励排行）
 ├── scripts/
