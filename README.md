@@ -50,6 +50,7 @@
 - **Player 主类与 25+ Manager 横切图**：玩家侧圣殿 · 1676 行 · 57 PlayerProperty · 5 种 ID 层次 · 中介模式解耦 · 12+ 登录 Notify
 - **事件类型统一总线深度剖析**：4 套并行 (WatcherTriggerType 299 + QuestContent 80+ + QuestCond 80+ + Lua EventType 30+) · 500+ 事件 · 156 调用
 - **表演系统与对话配置深度剖析**：极端客户端权威 · 服务器极简 200 行 · Cutscene 只下发 ID · 4 种 talk 模式 · 30+ ExecXxx 输出端
+- **Quest 引擎运行时深度剖析**：4 层对象 · QuestSystem/Manager/MainQuest/Quest · 190+ 注解反射 handler · 倒排索引 · rewind 机制
 
 ## 快速开始
 
@@ -113,7 +114,8 @@ ServerResarch/
 │   ├── 39-drop-system-full.md               Drop 掉落系统 · 权重随机 · 两套并存 · 副本零掉落
 │   ├── 40-player-main-class-managers.md     Player 主类 + 25+ Manager · 玩家侧圣殿 · PlayerProperty 全图
 │   ├── 41-event-types-unified-bus.md        事件类型 4 套并行总线 · 500+ 事件类型 · 跨系统协作神经网络
-│   └── 42-performance-dialog-system.md      表演与对话系统 · 客户端权威极端样本 · Cutscene/Plot/Talk 演出
+│   ├── 42-performance-dialog-system.md      表演与对话系统 · 客户端权威极端样本 · Cutscene/Plot/Talk 演出
+│   └── 43-quest-runtime-engine.md           Quest 引擎运行时 · 4 层对象 · 190+ 反射 handler · rewind 机制
 ├── scripts/
 │   └── analyze_quest_rewards.py            任务奖励统计分析（含原石密度 + 顶级奖励排行）
 ├── scripts/
