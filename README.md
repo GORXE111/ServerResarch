@@ -48,6 +48,7 @@
 - **Inventory 物品系统全景**：经济中枢 · 7 ItemType + 40 MaterialType · 8 虚拟币 · ActionReason 190+ · 原子消费 · 插件扩展点
 - **Drop 掉落系统深度剖析**：随机抽奖管道 · 两套并存 (DropSystem + dropSubfield) · 权重 1-10000 · share×give 4 组合 · 副本零掉落
 - **Player 主类与 25+ Manager 横切图**：玩家侧圣殿 · 1676 行 · 57 PlayerProperty · 5 种 ID 层次 · 中介模式解耦 · 12+ 登录 Notify
+- **事件类型统一总线深度剖析**：4 套并行 (WatcherTriggerType 299 + QuestContent 80+ + QuestCond 80+ + Lua EventType 30+) · 500+ 事件 · 156 调用
 
 ## 快速开始
 
@@ -109,7 +110,8 @@ ServerResarch/
 │   ├── 37-ability-system-full.md            Ability 系统全景 · 行为统一引擎 · 注解反射 · 数据驱动
 │   ├── 38-inventory-system-full.md          Inventory 物品系统 · 经济中枢 · 190+ ActionReason · 8 虚拟币
 │   ├── 39-drop-system-full.md               Drop 掉落系统 · 权重随机 · 两套并存 · 副本零掉落
-│   └── 40-player-main-class-managers.md     Player 主类 + 25+ Manager · 玩家侧圣殿 · PlayerProperty 全图
+│   ├── 40-player-main-class-managers.md     Player 主类 + 25+ Manager · 玩家侧圣殿 · PlayerProperty 全图
+│   └── 41-event-types-unified-bus.md        事件类型 4 套并行总线 · 500+ 事件类型 · 跨系统协作神经网络
 ├── scripts/
 │   └── analyze_quest_rewards.py            任务奖励统计分析（含原石密度 + 顶级奖励排行）
 ├── scripts/
