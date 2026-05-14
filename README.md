@@ -61,6 +61,7 @@
 - **Tower/深境螺旋系统深度剖析**：endgame 核心 · 双层架构 · 12 楼×3 室×2 队 · 6 星门槛 · 月度循环 · 双奖励 · 复用 Dungeon 加壳
 - **GachaSystem 抽卡运行时引擎**：商业核心 · 6 BannerType · 4 套 pool · 4 类 pity · 命定值 · 双池平衡 · 热重载
 - **Multiplayer/Coop 系统运行时**：命名陷阱 · MultiplayerSystem 154 行真正联机 + CoopHandler 348 行邀约剧情 · World 切换 · selfConfidence 自信值
+- **InvokeHandler 批量包模式深度剖析**：60 行网络优化精髓 · 3 ForwardType 桶 · UnionCmdNotify 入口 · Client-Driven flush · 节省 60-95% 带宽
 
 ## 快速开始
 
@@ -135,7 +136,8 @@ ServerResarch/
 │   ├── 50-resin-stamina-time-locked.md      Resin/Stamina 时间锁 · 两套时间资源 · 14 ConsumptionType · 第 50 篇里程碑
 │   ├── 51-tower-spiral-abyss.md             Tower/深境螺旋 · 双层架构 · 12 楼×3 室×2 队 · 月度循环 · 复用 Dungeon
 │   ├── 52-gacha-system-runtime.md           GachaSystem 抽卡运行时 · 商业核心 · 6 BannerType · 4 套 pool · 4 类 pity · 命定值
-│   └── 53-multiplayer-coop-runtime.md       Multiplayer/Coop 命名陷阱 · 154 行联机 + 348 行邀约 · World 切换 · selfConfidence
+│   ├── 53-multiplayer-coop-runtime.md       Multiplayer/Coop 命名陷阱 · 154 行联机 + 348 行邀约 · World 切换 · selfConfidence
+│   └── 54-invoke-handler-batching.md        InvokeHandler 批量包模式 · 60 行精髓 · 3 ForwardType 桶 · UnionCmd 入口 · 节省 60-95% 带宽
 ├── scripts/
 │   └── analyze_quest_rewards.py            任务奖励统计分析（含原石密度 + 顶级奖励排行）
 ├── scripts/
