@@ -64,6 +64,7 @@
 - **InvokeHandler 批量包模式深度剖析**：60 行网络优化精髓 · 3 ForwardType 桶 · UnionCmdNotify 入口 · Client-Driven flush · 节省 60-95% 带宽
 - **CommandMap/Command 系统深度剖析**：嵌入式命令引擎 · 40 命令 · 第 16 次注解反射 · 3 级目标优先级 · Chat 双入口 · GM 桥
 - **ChatSystem 聊天系统深度剖析**：聊天枢纽 + 命令拦截 + 系统通知三位一体 · 双 prefix · 会话级历史 · dropMessage 双轨
+- **MailHandler 邮件系统深度剖析**：通用异步奖励通道 · lazy 过期删除 · isAttachmentGot 防重领 · 离线兜底 · mailId=index 脆弱设计
 
 ## 快速开始
 
@@ -141,7 +142,8 @@ ServerResarch/
 │   ├── 53-multiplayer-coop-runtime.md       Multiplayer/Coop 命名陷阱 · 154 行联机 + 348 行邀约 · World 切换 · selfConfidence
 │   ├── 54-invoke-handler-batching.md        InvokeHandler 批量包模式 · 60 行精髓 · 3 ForwardType 桶 · UnionCmd 入口 · 节省 60-95% 带宽
 │   ├── 55-command-map-system.md             CommandMap 命令引擎 · 40 命令 · 第 16 次注解反射 · 3 级目标 · Chat 双入口
-│   └── 56-chat-system.md                    ChatSystem 聊天系统 · 聊天+命令+系统通知三位一体 · 双 prefix · 会话级历史
+│   ├── 56-chat-system.md                    ChatSystem 聊天系统 · 聊天+命令+系统通知三位一体 · 双 prefix · 会话级历史
+│   └── 57-mail-system.md                    MailHandler 邮件系统 · 异步奖励通道 · lazy 过期 · 防重领 · 离线兜底
 ├── scripts/
 │   └── analyze_quest_rewards.py            任务奖励统计分析（含原石密度 + 顶级奖励排行）
 ├── scripts/
