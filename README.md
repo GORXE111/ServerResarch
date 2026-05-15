@@ -70,6 +70,7 @@
 - **EnergyManager 元素能量系统深度剖析**：产能 4 路 + 拾取转化 + 大招清空 · 客户端权威/服务端账本硬核样本 · 概率递增 pity · 1:1 复刻官服公式
 - **StaminaManager 体力系统深度剖析**：第三种执行模型（主动 200ms Timer 轮询）· MotionState 状态机 · 溺水服务端权威 kill · 与 Energy 全面对照
 - **CookingCompoundManager 合成台系统深度剖析**：三分法首个预测性验证 · 滑动 startTime 串行队列懒算 · 离线收益 · static 全局串号 bug
+- **CookingManager 烹饪系统深度剖析**：三分法边界（第 0 类同步事务）· payItems 失败未 return 无料白嫖 bug · 与合成台正反双对照
 
 ## 快速开始
 
@@ -153,7 +154,8 @@ ServerResarch/
 │   ├── 59-expedition-system.md              ExpeditionSystem 派遣系统 · 时间锁被动收益 · lazy 模式 #4 · 离线收益 · 领奖缺校验
 │   ├── 60-energy-manager.md                 EnergyManager 元素能量 · 产能 4 路 + 拾取转化 + 大招清空 · 客户端权威/服务端账本 · pity 递增
 │   ├── 61-stamina-manager.md                StaminaManager 体力 · 第三种执行模型 (200ms Timer 轮询) · MotionState 状态机 · 溺水服务端 kill
-│   └── 62-cooking-compound-system.md        CookingCompound 合成台 · 三分法首个预测验证 · 滑动 startTime 串行队列懒算 · static 串号 bug
+│   ├── 62-cooking-compound-system.md        CookingCompound 合成台 · 三分法首个预测验证 · 滑动 startTime 串行队列懒算 · static 串号 bug
+│   └── 63-cooking-system.md                 CookingManager 烹饪 · 三分法边界 (第 0 类同步事务) · 无料白嫖 bug · 与合成台正反双对照
 ├── scripts/
 │   └── analyze_quest_rewards.py            任务奖励统计分析（含原石密度 + 顶级奖励排行）
 ├── scripts/
