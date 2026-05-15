@@ -67,6 +67,7 @@
 - **MailHandler 邮件系统深度剖析**：通用异步奖励通道 · lazy 过期删除 · isAttachmentGot 防重领 · 离线兜底 · mailId=index 脆弱设计
 - **ShopSystem 商店系统深度剖析**：经济闭环出口 · 双数据源 · 3 货币 · 3 刷新周期 · 不信任客户端 · Lazy 刷新 · 原子扣费
 - **ExpeditionSystem 派遣系统深度剖析**：极简时间锁被动收益 · lazy evaluation 模式第 4 次确认 · 离线收益 · 领奖缺完成校验隐患
+- **EnergyManager 元素能量系统深度剖析**：产能 4 路 + 拾取转化 + 大招清空 · 客户端权威/服务端账本硬核样本 · 概率递增 pity · 1:1 复刻官服公式
 
 ## 快速开始
 
@@ -147,7 +148,8 @@ ServerResarch/
 │   ├── 56-chat-system.md                    ChatSystem 聊天系统 · 聊天+命令+系统通知三位一体 · 双 prefix · 会话级历史
 │   ├── 57-mail-system.md                    MailHandler 邮件系统 · 异步奖励通道 · lazy 过期 · 防重领 · 离线兜底
 │   ├── 58-shop-system.md                    ShopSystem 商店系统 · 经济出口 · 不信任客户端 · 3 货币 · Lazy 刷新
-│   └── 59-expedition-system.md              ExpeditionSystem 派遣系统 · 时间锁被动收益 · lazy 模式 #4 · 离线收益 · 领奖缺校验
+│   ├── 59-expedition-system.md              ExpeditionSystem 派遣系统 · 时间锁被动收益 · lazy 模式 #4 · 离线收益 · 领奖缺校验
+│   └── 60-energy-manager.md                 EnergyManager 元素能量 · 产能 4 路 + 拾取转化 + 大招清空 · 客户端权威/服务端账本 · pity 递增
 ├── scripts/
 │   └── analyze_quest_rewards.py            任务奖励统计分析（含原石密度 + 顶级奖励排行）
 ├── scripts/
