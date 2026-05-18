@@ -72,6 +72,7 @@
 - **CookingCompoundManager 合成台系统深度剖析**：三分法首个预测性验证 · 滑动 startTime 串行队列懒算 · 离线收益 · static 全局串号 bug
 - **CookingManager 烹饪系统深度剖析**：三分法边界（第 0 类同步事务）· payItems 失败未 return 无料白嫖 bug · 与合成台正反双对照
 - **ForgingManager 锻造系统深度剖析**：三分法第三次预测验证 · 并行多队列 · 滑动 startTime 跨系统再现 · payItems 缺 return bug 第 3 次（系统性）
+- **BattlePass 战令运行时深度剖析**：事件总线 fan-in 汇聚 · 独立 collection 持久化 · 懒每日重置 · 自引用 clamp 等级溢出 bug
 
 ## 快速开始
 
@@ -157,7 +158,8 @@ ServerResarch/
 │   ├── 61-stamina-manager.md                StaminaManager 体力 · 第三种执行模型 (200ms Timer 轮询) · MotionState 状态机 · 溺水服务端 kill
 │   ├── 62-cooking-compound-system.md        CookingCompound 合成台 · 三分法首个预测验证 · 滑动 startTime 串行队列懒算 · static 串号 bug
 │   ├── 63-cooking-system.md                 CookingManager 烹饪 · 三分法边界 (第 0 类同步事务) · 无料白嫖 bug · 与合成台正反双对照
-│   └── 64-forging-system.md                 ForgingManager 锻造 · 三分法第三次预测验证 · 并行多队列 · 滑动 startTime 再现 · payItems bug 系统性
+│   ├── 64-forging-system.md                 ForgingManager 锻造 · 三分法第三次预测验证 · 并行多队列 · 滑动 startTime 再现 · payItems bug 系统性
+│   └── 65-battlepass-runtime.md             BattlePass 战令运行时 · 事件 fan-in 汇聚 · 独立 collection · 懒每日重置 · 自引用 clamp 溢出 bug
 ├── scripts/
 │   └── analyze_quest_rewards.py            任务奖励统计分析（含原石密度 + 顶级奖励排行）
 ├── scripts/
