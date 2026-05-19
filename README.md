@@ -75,6 +75,7 @@
 - **BattlePass 战令运行时深度剖析**：事件总线 fan-in 汇聚 · 独立 collection 持久化 · 懒每日重置 · 自引用 clamp 等级溢出 bug
 - **BlossomManager 野外盈花营地深度剖析**：三分法第 5 验证（探索域+异构周期）· 自我修正 notes/65 为三层持久化 · 脚本驱动状态机
 - **HomeWorld 尘歌壶系统深度剖析**：三分法压力测试（大系统按子系统分解）· 设计 vs 实际生效模型 · 完成校验被注释白嫖 bug
+- **DailyTaskManager 每日委托系统深度剖析**：补强模型②（②a 自包含 vs ②b 委托累计）· 三连印证三层持久化 · Quest 引擎复用
 
 ## 快速开始
 
@@ -163,7 +164,8 @@ ServerResarch/
 │   ├── 64-forging-system.md                 ForgingManager 锻造 · 三分法第三次预测验证 · 并行多队列 · 滑动 startTime 再现 · payItems bug 系统性
 │   ├── 65-battlepass-runtime.md             BattlePass 战令运行时 · 事件 fan-in 汇聚 · 独立 collection · 懒每日重置 · 自引用 clamp 溢出 bug
 │   ├── 66-blossom-system.md                 BlossomManager 野外盈花 · 三分法第5验证(探索域) · 自我修正三层持久化 · Lua 状态机 · 树脂领奖
-│   └── 67-homeworld-system.md               HomeWorld 尘歌壶 · 三分法压力测试(子系统分解) · 设计vs实际模型 · 完成校验注释白嫖 bug
+│   ├── 67-homeworld-system.md               HomeWorld 尘歌壶 · 三分法压力测试(子系统分解) · 设计vs实际模型 · 完成校验注释白嫖 bug
+│   └── 68-daily-task-system.md              DailyTaskManager 每日委托 · 补强模型②(②a自包含vs②b委托) · 三连印证三层持久化 · Quest引擎复用
 ├── scripts/
 │   └── analyze_quest_rewards.py            任务奖励统计分析（含原石密度 + 顶级奖励排行）
 ├── scripts/
